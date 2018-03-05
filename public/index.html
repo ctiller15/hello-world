@@ -4,30 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello_World</title>
-    <link rel="stylesheet" href="/screen.css">
+    <link rel="stylesheet" href="./screen.css">
   </head>
   <body>
     <section>
-      <header>
+
+      <nav class="navigation">
+        <ul>
+          <li><a href="#header">Top</a></li>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#article-main">Main</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+      </nav>
+
+      <header id="header">
           <h1>My thoughts on the web</h1>
-          <p>Essay by Christopher Tiller</p>
+          <p>Essay by <a href="https://github.com/ctiller15" target="_blank">Christopher Tiller</a></p>
       </header>
 
-      <p>The web has had an interesting history, starting from simple, plain, more bare-bones roots and eventually leading to feature-rich, full-fledged websites we experience today. Looking at the history of the web, there appears to have been what can largely be described as a period of growth and adolescence, where there was a huge focus on actually getting tasks accomplished in the first place, (for instance, using HTML tables to accomplish any sort of design), and then a tool comes out that is tailor-made to solve that problem. (In this case, flash)</p>
+      <p id="intro">The web has had an interesting history, starting from simple, plain, more bare-bones roots and eventually leading to feature-rich, full-fledged websites we experience today. Looking at the history of the web, there appears to have been what can largely be described as a period of growth and adolescence, where there was a huge focus on actually getting tasks accomplished in the first place, (for instance, using HTML tables to accomplish any sort of design), and then a tool comes out that is tailor-made to solve that problem. (In this case, flash)</p>
 
-      <p>As of late, however, web design and development seem to have "found their footing" so to speak. This seems to coincide with the release of flash in 1996. At this time we had access to HTML for structure, JavaScript for interactivity, and Flash for design. It may not have been <i>perfect</i>, but at this time a developer would have had the means with which to create a fully functional, interactive website, and with enough elbow grease could reasonably accomplish whatever they desired.</p>
+      <div class="table-demo">
+        <table>
 
-      <p>Again, however, it still wasn't, it still isn't, perfect. Flash is infamous for being a resource-hog, and as of today(2018), is all but nonexistent on the web. It was found that CSS could accomplish the same, but in an easier manner. As such, it replaced it. If you owned a phone that could access the internet in the 2000's, you probably remember that browsing the web was a pain, if not outright impossible. A problem was presented, and as a result Mobile frameworks such as bootstrap were created. In the 2010's responsive design became an expectation, if not outright required, for any decent commercial website. </p>
+          <tr>
+          <td colspan="5">HEADER</td>
+          </tr>
+          
+          <tr>
+          <td rowspan="3">LEFT INDEX</td>
+          <td colspan="2">TEXT 1</td>
+          <td>PIC 1</td>
+          <td>PIC 2</td>
+          </tr>
+          
+          <tr>
+          <td>PIC 3</td>
+          <td colspan="3">TEXT 2</td>
+          </tr>
+          
+          <tr>
+          <td colspan="4">TEXT 3</td>
+          </tr>
+          
+        </table>
 
-      <p>This process of finding a problem, presenting a solution, and then coming up with a better solution continues to this day. A few years ago, layout was still difficult to accomplish, even with frameworks like bootstrap, and so the CSS flexbox model came to be. Flexbox was found to not be perfect for every kind of layout, and so more recently the CSS grid came about and is quickly gaining popularity.
+<pre>
+  <code>
+      &#x3C;table&#x3E;
+      &#x3C;tr&#x3E; ** Row 1 **
+      &#x3C;td colspan=&#x22;5&#x22;&#x3E;HEADER&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+      
+      &#x3C;tr&#x3E; ** Row 2 **
+      &#x3C;td rowspan=&#x22;3&#x22;&#x3E;LEFT INDEX&#x3C;/td&#x3E;
+      &#x3C;td colspan=&#x22;2&#x22;&#x3E;TEXT 1&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;PIC 1&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;PIC 2&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+      
+      &#x3C;tr&#x3E; ** Row 3 **
+      &#x3C;td&#x3E;PIC 3&#x3C;/td&#x3E;
+      &#x3C;td colspan=&#x22;3&#x22;&#x3E;TEXT 2&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+      
+      &#x3C;tr&#x3E; ** Row 4 **
+      &#x3C;td colspan=&#x22;4&#x22;&#x3E;TEXT 3&#x3C;/td&#x3E;
+      &#x3C;/tr&#x3E;
+      
+      &#x3C;/table&#x3E;
+  </code>
+</pre>
 
-        Writing HTML on its own can lead to more difficult code, and so now we have answers to that problem in the form of React, Vue, and Angular, allowing developers to modularize their HTML and make their lives somewhat easier. JavaScript as a language has received some criticism for its lack of strong typing, and overall difficulty of use, and so ES6 was released, with ES7 on the horizon to address said criticisms.
+        <p class="table-caption">As you can see, it wasn't always fun to create a beautiful layout...</p>
+      </div>
 
-        With this process as it has been, I could envision a future for web design in particular where the designer can just focus on designing, without needing to learn code. This is already possible to an extent via tools such as wordpress, and site template engines such as Wix, but it could go even further to where a designer can create their design in a way they are comfortable with, and then the code is generated for them. Or, alternatively, a future where the line between design and front-end development becomes so blurred that they may as well be seen as one and the same.
-      </p>
+      <div id="article-main">
+        <p class="main-start">As of late, however, web design and development seem to have "found their footing" so to speak. This seems to coincide with the release of flash in 1996. At this time we had access to HTML for structure, JavaScript for interactivity, and Flash for design. It may not have been <i class="italic">perfect</i>, but at this time a developer would have had the means with which to create a fully functional, interactive website, and with enough elbow grease could reasonably accomplish whatever they desired.</p>
 
-      <footer>
-        <p>Essay by Christopher Tiller</p>
+        <p class="main-mid">Again, however, it still wasn't, it still isn't, perfect. Flash is infamous for being a resource-hog, and as of today(2018), is all but nonexistent on the web. It was found that CSS could accomplish the same, but in an easier manner. As such, it replaced it. If you owned a phone that could access the internet in the 2000's, you probably remember that browsing the web was a pain, if not outright impossible. A problem was presented, and as a result Mobile frameworks such as bootstrap were created. In the 2010's responsive design became an expectation, if not outright required, for any decent commercial website. </p>
+
+        <img class="flash-hate" src="http://community.digitalmediaacademy.org/wp-content/uploads/2011/09/why-steve-jobs-hates-flash.jpg" alt="Steve Jobs really, really hated Flash">
+        <p class="flash-caption">As you can see, Steve Jobs really, really hated flash</p>
+
+        <p class="main-end">This process of finding a problem, presenting a solution, and then coming up with a better solution continues to this day. A few years ago, layout was still difficult to accomplish, even with frameworks like bootstrap, and so the CSS flexbox model came to be. Flexbox was found to not be perfect for every kind of layout, and so more recently the CSS grid came about and is quickly gaining popularity.
+
+          Writing HTML on its own can lead to more difficult code, and so now we have answers to that problem in the form of React, Vue, and Angular, allowing developers to modularize their HTML and make their lives somewhat easier. JavaScript as a language has received some criticism for its lack of strong typing, and overall difficulty of use, and so ES6 was released, with ES7 on the horizon to address said criticisms.
+
+          With this process as it has been, I could envision a future for web design in particular where the designer can just focus on designing, without needing to learn code. This is already possible to an extent via tools such as wordpress, and site template engines such as Wix, but it could go even further to where a designer can create their design in a way they are comfortable with, and then the code is generated for them. Or, alternatively, a future where the line between design and front-end development becomes so blurred that they may as well be seen as one and the same.
+        </p>
+      </div>
+
+      <footer id="footer">
+        <p>Essay by <a href="https://github.com/ctiller15" target="_blank">Christopher Tiller</a></p>
         <p>Article information sourced from <a href="http://blog.froont.com/brief-history-of-web-design-for-designers/" target="_blank">FROONT</a></p>
       </footer>
     </section>

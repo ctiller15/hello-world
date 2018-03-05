@@ -1,9 +1,99 @@
 html {
   height: 100%;
+  background: #794628; 
 }
 
 body {
-  margin: 0;
+  margin: 10px;
   min-height: 100%;
   font: 16px / 1 sans-serif;
+  color: #2E2723;
+  background: #DBC5B8;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+nav.navigation ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+}
+
+h1{
+  font-size: 32px;
+}
+
+p{
+  margin: 24px 0;
+}
+
+.table-demo {
+  display: flex;
+  flex-wrap: wrap;
+  background: #F2DDD0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.table-demo table{
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.table-demo table * {
+  border: 1px solid black;
+}
+
+
+
+.table-demo > * {
+  width: 90%;
+}
+
+.table-caption {
+  font-size: 12px;
+  font-style: italic;
+  margin: 0 auto;
+}
+
+.flash-hate {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.flash-caption {
+  display: block;
+  font-size: 12px;
+  font-style: italic;
+  margin: 10px auto;
+  width: 90%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .table-demo > * {
+    width: 40%;
+  }
+  
+  .flash-hate {
+    width: 50%;
+  }
+
+  .flash-caption {
+    width: 50%;
+  }
 }
