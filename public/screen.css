@@ -20,6 +20,15 @@ nav.navigation ul{
   padding-left: 0;
 }
 
+li a{
+  font-size: 20px;
+}
+
+li a:hover{
+  color: white;
+  background: #2E2723;
+}
+
 h1{
   font-size: 32px;
 }
@@ -84,7 +93,7 @@ a:hover {
   font-weight: bold;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .table-demo > * {
     width: 40%;
   }
